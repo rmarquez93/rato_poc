@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rato — Encontrá algo que te cope</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="brand" href="#inicio" aria-label="Rato, inicio">rato<span>•</span></a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a class="active" href="#explorar">Explorar</a>
+        <a href="#mis-pases">Mis pases</a>
+      </nav>
+      <button class="profile" type="button" aria-label="Abrir perfil">LR</button>
+    </header>
+
+    <main id="inicio">
+      <section class="intro">
+        <p class="eyebrow">MONTEVIDEO PARA VIVIRLA</p>
+        <h1>¿Qué tenés ganas<br />de hacer hoy?</h1>
+        <div class="mode-toggle" role="tablist" aria-label="Tipo de actividad">
+          <button class="mode active" type="button" role="tab" aria-selected="true" data-mode="workshops">Workshops</button>
+          <button class="mode" type="button" role="tab" aria-selected="false" data-mode="cursos">Cursos</button>
+        </div>
+      </section>
+
+      <section class="section top-section" aria-labelledby="top-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SELECCIÓN RATO</p>
+            <h2 id="top-title">Top del mes</h2>
+          </div>
+          <div class="carousel-controls">
+            <button class="circle-button previous" type="button" aria-label="Anterior">←</button>
+            <button class="circle-button next" type="button" aria-label="Siguiente">→</button>
+          </div>
+        </div>
+        <div class="carousel" id="top-carousel">
+          <article class="top-card terracotta" data-kind="workshops">
+            <div class="card-art art-ceramics"><span>◒</span><span>⌒</span><span>◡</span></div>
+            <div class="top-content"><p class="tag">WORKSHOP</p><h3>Una tarde de cerámica</h3><p>Manos a la masa · Cordón</p><strong>Desde $890 <small>con tu pase</small></strong></div>
+          </article>
+          <article class="top-card lemon" data-kind="workshops">
+            <div class="card-art art-cooking"><span>✺</span><span>✹</span></div>
+            <div class="top-content"><p class="tag">WORKSHOP</p><h3>Pasta fresca, vino y amigos</h3><p>Casa Umami · Parque Rodó</p><strong>20% off <small>con tu pase</small></strong></div>
+          </article>
+          <article class="top-card lavender" data-kind="cursos">
+            <div class="card-art art-photo"><span>◉</span><span>⌁</span></div>
+            <div class="top-content"><p class="tag">CURSO · 4 CLASES</p><h3>Fotografía sin modo automático</h3><p>La Cámara · Centro</p><strong>1ª clase gratis</strong></div>
+          </article>
+          <article class="top-card mint" data-kind="cursos">
+            <div class="card-art art-dance"><span>♩</span><span>♬</span></div>
+            <div class="top-content"><p class="tag">CURSO · 8 CLASES</p><h3>Bailá salsa desde cero</h3><p>Ritmo Sur · Pocitos</p><strong>15% off <small>con tu pase</small></strong></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section recommendation" aria-labelledby="recommended-title">
+        <div class="recommendation-copy">
+          <p class="eyebrow">HECHO PARA VOS</p>
+          <h2 id="recommended-title">Recomendados<br />para vos</h2>
+          <p class="body-copy">Porque te coparon las actividades creativas y al aire libre.</p>
+          <button class="text-button" type="button">Ver todos <span>→</span></button>
+        </div>
+        <div class="recommendation-cards">
+          <article class="mini-card">
+            <div class="mini-art orange">✦</div>
+            <div><p class="tag">WORKSHOP</p><h3>Velas con intención</h3><p>Domingo · Punta Carretas</p></div>
+          </article>
+          <article class="mini-card">
+            <div class="mini-art blue">⌇</div>
+            <div><p class="tag">CURSO</p><h3>Huerta en balcón</h3><p>6 encuentros · Palermo</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="sponsored-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">PROPUESTAS DESTACADAS</p><h2 id="sponsored-title">Talleres para descubrir</h2></div>
+          <button class="text-button" type="button">Ver más <span>→</span></button>
+        </div>
+        <div class="sponsored-grid">
+          <article class="sponsored-card"><span class="sponsored-label">PATROCINADO</span><div class="sponsor-image one">⌘</div><h3>Introducción al torno</h3><p>Barro Estudio · Goes</p><span class="pill">Cerámica</span></article>
+          <article class="sponsored-card"><span class="sponsored-label">PATROCINADO</span><div class="sponsor-image two">☼</div><h3>Sabores de estación</h3><p>Cocina Nómade · Malvín</p><span class="pill">Cocina</span></article>
+          <article class="sponsored-card"><span class="sponsored-label">PATROCINADO</span><div class="sponsor-image three">↗</div><h3>Serigrafía para empezar</h3><p>Tinta Viva · Ciudad Vieja</p><span class="pill">Arte</span></article>
+        </div>
+      </section>
+
+      <section class="section categories" id="explorar" aria-labelledby="categories-title">
+        <div class="section-heading"><div><p class="eyebrow">ENCONTRÁ TU PRÓXIMA OBSESIÓN</p><h2 id="categories-title">Explorá por categoría</h2></div></div>
+        <div class="category-grid">
+          <button class="category-card peach" type="button"><span>◒</span><strong>Arte &amp;<br />creatividad</strong><i>→</i></button>
+          <button class="category-card yellow" type="button"><span>♩</span><strong>Música &amp;<br />baile</strong><i>→</i></button>
+          <button class="category-card sky" type="button"><span>✺</span><strong>Bienestar &amp;<br />movimiento</strong><i>→</i></button>
+          <button class="category-card pink" type="button"><span>⌁</span><strong>Cocina &amp;<br />sabores</strong><i>→</i></button>
+          <button class="category-card green" type="button"><span>☘</span><strong>Naturaleza &amp;<br />aire libre</strong><i>→</i></button>
+        </div>
+      </section>
+    </main>
+    <footer>rato• <span>Hacé lugar para lo que te gusta.</span></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
